@@ -3,9 +3,9 @@ BASE_PROJECT := github.com/lucas59356/gedis
 travis: build_api build_benchmark core_test
 
 build_api: install_deps
-	go build -v  -o ignore $(BASE_PROJECT)/api
+	go build -v -o api-server $(BASE_PROJECT)/api
 build_benchmark: install_deps
-	go build -v -o ignore2 $(BASE_PROJECT)/cli/gedis-benchmark
+	go build -v -o gedis-benchmark $(BASE_PROJECT)/cli/gedis-benchmark
 core_test: install_deps
 	go test -v $(BASE_PROJECT)/core
 
