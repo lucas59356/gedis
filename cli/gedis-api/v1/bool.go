@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/lucas59356/gedis/api/requtils"
+	"github.com/lucas59356/gedis/cli/gedis-api/requtils"
 	"github.com/lucas59356/gedis/core"
 )
 
