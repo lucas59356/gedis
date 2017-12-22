@@ -1,0 +1,8 @@
+language: go
+go:
+  - 1.9
+  - 1.8
+  - 1.7
+  - master
+install: true
+script: make travis
