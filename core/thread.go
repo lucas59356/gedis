@@ -15,7 +15,7 @@ var (
 	ErrInvalidType = errors.New("Invalid data type: data not supported")
 )
 
-//
+// SingleValue Represents a single value in BD
 type SingleValue struct {
 	Key   string
 	Type  int8

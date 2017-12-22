@@ -5,28 +5,6 @@ import (
 	"testing"
 )
 
-func TestNewThread(t *testing.T) {
-	tests := []struct {
-		name string
-		want Thread
-	}{
-		{
-			name: "¯\\_(ツ)_/¯",
-			want: Thread{
-				Types:  map[string]int8{},
-				Values: map[string]interface{}{},
-			},
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := NewThread(); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("NewThread() = %v, want %v", got, tt.want)
-			}
-		})
-	}
-}
-
 func TestThread_Get(t *testing.T) {
 	type args struct {
 		key string
@@ -90,7 +68,7 @@ func TestThread_Set(t *testing.T) {
 	}{
 		{
 			name: "Basic set",
-			t:    &tr,
+			t:    tr,
 			args: args{
 				key: "Teste",
 				v:   "EOQ",
