@@ -17,7 +17,7 @@ var (
 		TypeWhatever: "*",
 		TypeBool:     "bool",
 		TypeString:   "string",
-		TypeInt:      "int",
+		TypeInt:      "number",
 	}
 )
 
